@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <form action="procesador-del-formulario.php">
+
+      <label>Input de texto</label>
+      <input type="text" placeholder="Nombre">
+
+      <br>
+      <br>
+
+      <label>Input de email</label>
+      <input type="email" placeholder="Ingrese su email" required>
+
+      <br>
+      <br>
+
+      <label>Input de password</label>
+      <input type="password">
+
+      <br>
+      <br>
+
+      <label>Input de fecha</label>
+      <input type="date">
+
+      <br>
+      <br>
+
+      <label>Input de número</label>
+      <input type="number">
+
+      <br>
+      <br>
+
+      <label>Textarea</label>
+      <textarea placeholder="Ingrese aquí su texto" rows="6" cols="20"></textarea>
+
+      <ul>
+        <li>rows="6" &rarr; El campo crece verticalmente para soportar la cantidad de filas de texto especificadas.</li>
+        <li>cols="20" &rarr; El campo crece horizontalmente para soportar la cantidad de columnas de texto especificadas.</li>
+      </ul>
+      <p>Estas medidas no son obligatorias, y son alterables en CSS.</p>
+
+      <br>
+      <br>
+
+      <label>Checkbox</label>
+      <input name="preferido" type="checkbox" checked>Robots
+      <input name="preferido" type="checkbox">Piratas
+      <input name="preferido" type="checkbox" disabled>Animales
+
+      <ul>
+        <li>Los checkbox pueden tener el atributo "checked" para aparecer marcados por defecto, como en "Robots".</li>
+        <li>Al igual que los input de texto, también pueden tener el atributo "disabled" para aparecer desactivados, como en "Animales".</li>
+        <li>En los checkbox, pueden seleccionarse varias opciones.</li>
+      </ul>
+
+      <br>
+      <br>
+
+      <label>Radio Buttons</label>
+      <input name="sexo" type="radio">Hombre
+      <input name="sexo" type="radio">Mujer
+      <input name="sexo" type="radio">No especificar
+
+      <ul>
+        <li>Los radio buttons deben tener el mismo "name" a fin de funcionar como un grupo.</li>
+        <li>En los radio buttons, solo puede haber uno seleccionado en la familia.</li>
+      </ul>
+
+      <br>
+      <br>
+
+      <label>Escoja su categoría favorita</label>
+      <select>
+        <optgroup label="Robots">
+          <option value="mecanicos">Mecánicos</option>
+          <option value="automatas">Autómatas</option>
+          <option value="androides">Androides espaciales</option>
+        </optgroup>
+        <optgroup label="Transporte">
+          <option value="bicicletas">Bicicletas</option>
+          <option value="autos">Autos</option>
+          <option value="naves">Naves espaciales</option>
+        </optgroup>
+      </select>
+
+      <br>
+      <br>
+
+      <label>Input de archivo</label>
+      <input type="file">
+
+      <br>
+      <br>
+
+      <label>Input submit (Para enviar el formulario)</label>
+      <input type="submit" value="Enviar datos">
+
+      <br>
+      <br>
+
+      <label>Input button</label>
+      <input type="button" value="Función asignable">
+
+      <br>
+      <br>
+
+      <label>Botón genérico</label>
+      <button>Función asignable</button>
+
+    </form>
+
+    <h4>Algunos atributos:</h4>
+    <ul>
+      <li>placeholder="Nombre" &rarr; Esto coloca una instrucción/tip en el campo.</li>
+      <li>value="Ronald" &rarr; Cuando el usuario llena un campo de texto, por ejemplo, la información ingresada es el "value". Se puede pre-escribir el value con este atributo, pero el usuario sigue siendo capaz de modificarlo.</li>
+      <li>disabled &rarr; Esto desactiva el campo.</li>
+      <li>required &rarr; Esto hace que el campo sea requerido (La validación se hace vía Javascript).</li>
+      <li>hidden &rarr; Esto oculta el campo al usuario, pero puede llevar información.</li>
+    </ul>
+
+    <h4>Tip adicional:</h4>
+    <p>Escribir el input field DENTRO de la etiqueta "label" también es válido, y aporta en una mejor experiencia de usuario. Al dar click sobre el texto del label, el input se vuelve activo.</p>
+
+  </body>
+
+</html>
