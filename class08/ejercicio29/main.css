@@ -1,0 +1,25 @@
+body {
+  background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 500px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    background-color: blue;
+    color: white;
+    font-size: 40px;
+  }
+}
